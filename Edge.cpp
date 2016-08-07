@@ -1,8 +1,8 @@
 #include "Edge.hpp"
 
-Frames Edge::getFrames(){
-	return frames;
+Frame_seq Edge::getFrame_seq(){
+	return frame_seq;
 }
-void Edge::setFrames(Frames frames){
-	this->frames = frames;
+void Edge::setFrame_seq(Frame_seq frame_seq){
+	this->frame_seq = frame_seq;
 }

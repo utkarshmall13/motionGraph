@@ -1,16 +1,15 @@
-#include "Frames.hpp"
+#include "Frame_seq.hpp"
 
 class Edge{
-	Frames frames;
+	Frame_seq frame_seq;
 public:
 	Edge(){
-		Frames * framesP = new Frames();
-		frames = *framesP;
+		frame_seq = *(new Frame_seq());
 	}
-	Edge(Frames frames){
-		this->frames = frames;
+	Edge(Frame_seq frame_seq){
+		this->frame_seq = frame_seq;
 	}
 
-	Frames getFrames();
-	void setFrames(Frames frames);
+	Frame_seq getFrame_seq();
+	void setFrame_seq(Frame_seq frame_seq);
 };

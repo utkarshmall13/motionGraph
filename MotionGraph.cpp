@@ -48,7 +48,7 @@ std::vector<Frame>* MotionGraph::randomTraversal(int depth){
 		int chosen = rand()%deg;
 		j+=chosen;
 		EdgeDescriptor e = *j;
-		v->insert(v->end(),graph[e].getFrames().getFrames()->begin(),graph[e].getFrames().getFrames()->end());
+		v->insert(v->end(),graph[e].getFrame_seq().getFrames()->begin(),graph[e].getFrame_seq().getFrames()->end());
 		VertexDescriptor targetVertex = target(e,graph);
 		curr = targetVertex;
 	}

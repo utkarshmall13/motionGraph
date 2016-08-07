@@ -12,4 +12,5 @@ public:
 
 	std::vector<float> * getChannelValues();
 	void setChannelValues(std::vector<float> * channelValues);
+	void print();
 };
